@@ -12,14 +12,14 @@ const path = require('path')
 const {compile} = require('@salesforce-ux/design-system-compiler')
 const pathToSassFolder = path.resolve(__dirname, 'node_modules/@salesforce-ux/design-system/scss')
 
-compile(pathToSassFolder, {wrapper: 'testTime'}, css => {
+// produce a css file scoped to your class name
+compile(pathToSassFolder, {scope: 'myScope'}, css => {
   fs.writeFileSync('scoped-design-system.css', css)
 })
 ```
 
-or without a wrapper
-
 ```js
+// no scoping class:
 compile(pathToSassFolder, {}, css => {
   fs.writeFileSync('scoped-design-system.css', css)
 })

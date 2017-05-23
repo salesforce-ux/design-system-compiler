@@ -7,7 +7,7 @@ const pathToSass = path.resolve(__dirname, '../', 'node_modules/@salesforce-ux/d
 
 describe('compile', () => {
   it('returns scoped css', done => {
-    compile(pathToSass, {wrapper: 'testTime'}, css => {
+    compile(pathToSass, {scope: 'testTime'}, css => {
       expect(String(css)).toMatch(/\.testTime {/g)
       done()
     })

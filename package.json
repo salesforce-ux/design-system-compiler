@@ -1,0 +1,19 @@
+{
+  "name": "@salesforce-ux/design-system-compiler",
+  "version": "0.0.1",
+  "description": "Compile the Design System Sass with options",
+  "main": "index.js",
+  "license": "SEE LICENSE IN README.md",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^20.0.3"
+  }
+}
